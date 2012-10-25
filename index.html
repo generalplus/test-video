@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Demo: HTML5 video controls with JavaScript</title>
+<style media="screen" type="text/css">
+	div.container { background-color: #ddd; margin: 0 0 20px; padding: 1px 1px 0; width: 360px; }
+    p { font: 14px/1.3 Verdana, sans-serif; }
+    p.back { bottom: 20px; left: 10px; position: absolute; }
+	ul, li, p { margin: 0; padding: 0; }
+	ul { list-style: none; overflow: hidden; padding: 10px 0; width: 100%; }
+	li { float: left; }
+	li.play_pause { padding-left: 10px; width: 40px; }
+	li.time { text-align: center; width: 160px; }
+	li.volume { padding-right: 10px; width: 100px; }
+	.control { color: red; cursor: pointer; }
+</style>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="video.js" type="text/javascript"></script>
+</head>
+<body>
+	<div class="container">
+
+	<video class="video" autobuffer height="240" poster="bbb_poster-360x240.jpg" width="360">
+   		<source src="BigBuck.m4v">
+		<source src="BigBuck.webm" type="video/webm">
+		<source src="BigBuck.theora.ogv" type="video/ogg">
+	</video>
+
+	<ul class="controls">
+		<li class="play_pause"><p class="control" id="play">Play</p></li>
+	</ul>
+	</div>
+
+    <p class="back">
+		<a href="http://www.broken-links.com/2009/10/06/building-html5-video-controls-with-javascript/">
+			Based on Peter Gasston's Demo: HTML5 video controls with JavaScript
+		</a>
+	</p>
+</body>
+</html>
